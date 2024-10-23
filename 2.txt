@@ -1,0 +1,446 @@
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git config --global user.name Rajan
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git config --global user.email rajan.kumar367351@gmail.com
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git config --global list
+error: key does not contain a section: list
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git config --global --list
+user.name=Rajan
+user.email=rajan.kumar367351@gmail.com
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ code .
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~
+$ git --version
+git version 2.46.2.windows.1
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~
+$ pwd
+/c/Users/Geek-Institute
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TM.blf
+ NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~
+$ cd Desktop/
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ ls
+ 1_tl3B9CRamhIw54usIfXubw.png   Doubts.txt   HTML/  'Visual Studio Code.lnk'*   desktop.ini
+'Digistump Drivers'/            GitClass/    PPT/    data/
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ mkdir abcd
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ cd abcd
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/abcd
+$ ls
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/abcd
+$ touch data.txt index.html style.css
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/abcd
+$ ls
+data.txt  index.html  style.css
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/abcd
+$ cd ..
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ rmdir abcd
+rmdir: failed to remove 'abcd': Directory not empty
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ rm -rf abcd/
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ mv data/ abcd
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ cd abcd/
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/abcd
+$ ls
+asdasd.pdf
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/abcd
+$ cp asdasd.pdf ../
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/abcd
+$ ls
+asdasd.pdf
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/abcd
+$ rm -rf asdasd.pdf
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/abcd
+$ cd ..
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ mv asdasd.pdf abcd/
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ touch names.txt
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ notepad names.txt
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ cat names.txt
+Abhishek
+Aman
+Harsh
+Ayush
+Aditi
+Anjali
+Shubham
+Anushka
+Rohit
+Saurabh
+Muskan
+Rahul
+Utkarsh
+Vaibhav
+Amit
+Saumya
+Rishabh
+Shruti
+Himanshu
+Kajal
+Ankit
+Gaurav
+Nikhil
+Siddharth
+Prashant
+Priya
+Harshit
+Shashank
+Akash
+Varun
+Yash
+Shreya
+Harshita
+Anurag
+Vivek
+Swati
+Vishal
+Aditya
+Nidhi
+Ayushi
+Krishna
+Anshika
+Sakshi
+Shivani
+Prakhar
+Mansi
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ head names.txt
+Abhishek
+Aman
+Harsh
+Ayush
+Aditi
+Anjali
+Shubham
+Anushka
+Rohit
+Saurabh
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ head -n 5 names.txt
+Abhishek
+Aman
+Harsh
+Ayush
+Aditi
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ head tail names.txt
+head: cannot open 'tail' for reading: No such file or directory
+==> names.txt <==
+Abhishek
+Aman
+Harsh
+Ayush
+Aditi
+Anjali
+Shubham
+Anushka
+Rohit
+Saurabh
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ tail names.txt
+Parijat
+Ratnesh
+Kritagya
+Shalvi
+Sankalp
+Prasoon
+Madhusudan
+Prastuti
+Rampratap
+Madhukar
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ tail -n 20 names.txt
+Sheesh
+Kundan
+Manush
+Paakhi
+Madan
+Gundeep
+Gauri
+Ifra
+Jaypreet
+Iskand
+Parijat
+Ratnesh
+Kritagya
+Shalvi
+Sankalp
+Prasoon
+Madhusudan
+Prastuti
+Rampratap
+Madhukar
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ ^C
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ 
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SCRIPTIN.ttf
+        Untitled 2.htm
+        Untitled 2.jpg
+        abcd.txt
+        img0.html
+        img0.png
+        img1.html
+        img1.png
+        index.html
+        style.css
+        text0.html
+        text1.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git add index.html
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SCRIPTIN.ttf
+        Untitled 2.htm
+        Untitled 2.jpg
+        abcd.txt
+        img0.html
+        img0.png
+        img1.html
+        img1.png
+        style.css
+        text0.html
+        text1.html
+
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git commit -m "initial Commit"
+[master (root-commit) eb78436] initial Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SCRIPTIN.ttf
+        Untitled 2.htm
+        Untitled 2.jpg
+        abcd.txt
+        img0.html
+        img0.png
+        img1.html
+        img1.png
+        style.css
+        text0.html
+        text1.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SCRIPTIN.ttf
+        Untitled 2.htm
+        Untitled 2.jpg
+        abcd.txt
+        img0.html
+        img0.png
+        img1.html
+        img1.png
+        style.css
+        text0.html
+        text1.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git status -s
+ M index.html
+?? SCRIPTIN.ttf
+?? "Untitled 2.htm"
+?? "Untitled 2.jpg"
+?? abcd.txt
+?? img0.html
+?? img0.png
+?? img1.html
+?? img1.png
+?? style.css
+?? text0.html
+?? text1.html
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git add .
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   SCRIPTIN.ttf
+        new file:   Untitled 2.htm
+        new file:   Untitled 2.jpg
+        new file:   abcd.txt
+        new file:   img0.html
+        new file:   img0.png
+        new file:   img1.html
+        new file:   img1.png
+        modified:   index.html
+        new file:   style.css
+        new file:   text0.html
+        new file:   text1.html
+
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git commit -m "second Commit"
+[master ac7587d] second Commit
+ 12 files changed, 85 insertions(+)
+ create mode 100644 SCRIPTIN.ttf
+ create mode 100644 Untitled 2.htm
+ create mode 100644 Untitled 2.jpg
+ create mode 100644 abcd.txt
+ create mode 100644 img0.html
+ create mode 100644 img0.png
+ create mode 100644 img1.html
+ create mode 100644 img1.png
+ create mode 100644 style.css
+ create mode 100644 text0.html
+ create mode 100644 text1.html
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git log
+commit ac7587d4616d7b00ee0bc0711bc516924d614a2a (HEAD -> master)
+Author: Rajan <rajan.kumar367351@gmail.com>
+Date:   Wed Oct 16 11:37:00 2024 +0530
+
+    second Commit
+
+commit eb7843691fb9aebee8e52d509132a4c4c9d5883c
+Author: Rajan <rajan.kumar367351@gmail.com>
+Date:   Wed Oct 16 11:35:41 2024 +0530
+
+    initial Commit
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git reset --hard eb7843691fb9aebee8e52d509132a4c4c9d5883c
+HEAD is now at eb78436 initial Commit
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git reset --hard aac7587d4616d7b00ee0bc0711bc516924d614a2a
+fatal: ambiguous argument 'ac7587d4616d7b00ee0bc0711bc516924d614a2a': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git reset --hard ac7587d4616d7b00ee0bc0711bc516924d614a2a
+fatal: ambiguous argument 'ac7587d4616d7b00ee0bc0711bc516924d614a2a': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$ git reset --hard ac7587d4616d7b00ee0bc0711bc516924d614a2a
+HEAD is now at ac7587d second Commit
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass1 (master)
+$
+

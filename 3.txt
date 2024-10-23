@@ -1,0 +1,325 @@
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (master)
+$ git add index.html
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (master)
+$ git add .
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   style.css
+
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (master)
+$ code .
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (master)
+$ git commit -m "initial Commit"
+[master (root-commit) 076cb55] initial Commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (master)
+$ git branch -m main
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ git commit -m "initial Commit"
+On branch main
+nothing to commit, working tree clean
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ git branch
+* main
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ git checkout -b feature
+Switched to a new branch 'feature'
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (feature)
+$ git branch
+* feature
+  main
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (feature)
+$ git add .
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (feature)
+$ git commit -m "modified Index file"
+[feature 37d50dd] modified Index file
+ 1 file changed, 11 insertions(+)
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (feature)
+$ git checkout main
+Switched to branch 'main'
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ git merge feature
+Updating 076cb55..37d50dd
+Fast-forward
+ index.html | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ git remote add origin git@github.com:rajan9311-kr/GitClass.git
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ cd
+
+Geek-Institute@Geek-Institute MINGW64 ~
+$ pwd
+/c/Users/Geek-Institute
+
+Geek-Institute@Geek-Institute MINGW64 ~
+$ sshssh-keygen -t rsa -b 4096 -C "rajan@geekinstitute"
+bash: sshssh-keygen: command not found
+
+Geek-Institute@Geek-Institute MINGW64 ~
+$ ssh-keygen -t rsa -b 4096 -C "rajan@geekinstitute"
+Generating public/private rsa key pair.
+
+
+
+
+Enter file in which to save the key (/c/Users/Geek-Institute/.ssh/id_rr no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Geek-Institute/.ssh/id_
+Your public key has been saved in /c/Users/Geek-Institute/.ssh/id_rsa.
+The key fingerprint is:
+SHA256:o463/S5FNerdNXcIOvmTh7R11xeFL3/6Pln6iG9ojQQ rajan@geekinstitute
+The key's randomart image is:
++---[RSA 4096]----+
+|               .o|
+|            + .. |
+|           = o oo|
+|          E . +.X|
+|        So * * =*|
+|       . .o O o +|
+|      .  . . * o+|
+|     o...   +.=+ |
+|    ..o..+o..oo+=|
++----[SHA256]-----+
+
+Geek-Institute@Geek-Institute MINGW64 ~
+$
+
+Geek-Institute@Geek-Institute MINGW64 ~
+$
+
+Geek-Institute@Geek-Institute MINGW64 ~
+$ ls
+ AppData/                 Music/
+'Application Data'@      'My Documents'@
+ Contacts/                NTUSER.DAT
+ Cookies@                 NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8
+ Desktop/                 NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8
+ Documents/               NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8
+ Downloads/               NetHood@
+ Favorites/               OneDrive/
+ IntelGraphicsProfiles/   Pictures/
+ Links/                   PrintHood@
+'Local Settings'@         Recent@
+
+Geek-Institute@Geek-Institute MINGW64 ~
+$ cd .ssh
+
+Geek-Institute@Geek-Institute MINGW64 ~/.ssh
+$ ls
+id_rsa  id_rsa.pub  known_hosts  known_hosts.old
+
+Geek-Institute@Geek-Institute MINGW64 ~/.ssh
+$ cat id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC7vXyKCBF3GMfMbMUhFa8EEUAg+vHSIe/ectMxdrOWxhT59AC5DBVux87iMBu9JPGieOx0JpbpdlJyhIknAjawJmrj67A3kLSDgQPCum2731kQ6/l2kNdyeM8Yd4NbgrxNTiQqsZ1Jsumpyzg68OJbQBBNsy+2fU8bIBFZIK9jclmK322oHeHqlixr5ErwaFBe53xb2Ve4Z35ZoIvPGvOoLnsudgdxTBN68GB6m9K7mejKWSfOaUM5zz80RgqyvrSEwOvHB7z5Wwn/N76QyP8cORGJktTi8nPqidyR1leCF1VIZ+acYOdO/uKSMyzmw== rajan@geekinstitute
+
+Geek-Institute@Geek-Institute MINGW64 ~/.ssh
+$ ssh -T git@github.com
+The authenticity of host 'github.com (20.207.73.82)' can't be establis
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Warning: Permanently added 'github.com' (ED25519) to the list of known
+Hi rajan9311-kr! You've successfully authenticated, but GitHub does no
+
+Geek-Institute@Geek-Institute MINGW64 ~/.ssh
+$ cd
+
+Geek-Institute@Geek-Institute MINGW64 ~
+$ cd Desktop/
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop
+$ ls
+GitClass/  balenaEtcher.lnk*  desktop.ini
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop
+$ cd GitClass/
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 627 bytes | 627.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:rajan9311-kr/GitClass.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ git push -u origin feature
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/rajan9311-kr/GitClass/pull/new/feature
+remote:
+To github.com:rajan9311-kr/GitClass.git
+ * [new branch]      feature -> feature
+branch 'feature' set up to track 'origin/feature'.
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ git push -u origin feature
+branch 'feature' set up to track 'origin/feature'.
+Everything up-to-date
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ git push -u origin main
+To github.com:rajan9311-kr/GitClass.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:rajan9311-kr/GitClass.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ get fetch origin main
+bash: get: command not found
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ git fetch origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+Unpacking objects:  66% (2/3)
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ git fetch origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+Unpacking objects:  66% (2/3)
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ ls
+index.html  style.css
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ git fetch origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+Unpacking objects:  66% (2/3)
+
+Geek-Institute@Geek-Institute MINGW64 ~/Desktop/GitClass (main)
+$ cd
+
+Geek-Institute@Geek-Institute MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TM.blf
+ NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+Geek-Institute@Geek-Institute MINGW64 ~
+$ git clone https://github.com/rajan9311-kr/GitClass.git
+Cloning into 'GitClass'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 9 (delta 0), reused 6 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (9/9), 236.92 KiB | 3.16 MiB/s, done.
+
+Geek-Institute@Geek-Institute MINGW64 ~
+$ cd GitClass/
+
+Geek-Institute@Geek-Institute MINGW64 ~/GitClass (main)
+$ ls
+2.png  index.html  style.css
+
+Geek-Institute@Geek-Institute MINGW64 ~/GitClass (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Geek-Institute@Geek-Institute MINGW64 ~/GitClass (main)
+$ git log
+commit 743980051f96dc92aa72c232c85ce13d26f6c3b6 (HEAD -> main, origin/main, origin/HEAD)
+Author: rajan9311-kr <rajanraj93311@gmail.com>
+Date:   Mon Oct 21 11:51:39 2024 +0530
+
+    Add files via upload
+
+commit 37d50dde724058e8ed91e479bdd4654c80530ee2 (origin/feature)
+Author: Rajan <rajan@geekinsitute.org>
+Date:   Mon Oct 21 11:46:58 2024 +0530
+
+    modified Index file
+
+commit 076cb550a207c1a5762cf23d9d24d17740249015
+Author: Rajan <rajan@geekinsitute.org>
+Date:   Mon Oct 21 11:45:30 2024 +0530
+
+    initial Commit
+
+Geek-Institute@Geek-Institute MINGW64 ~/GitClass (main)
+$
